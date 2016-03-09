@@ -40,3 +40,12 @@ while (true)
 	}
 }
 ```
+
+Sample projects
+---------------
+
+1. **Sample.AddMessages** - will start adding messages to queue
+2. **Sample.QueueSize** - to monitor how much messages left in queue
+3. **Worker.Code** - common code to process messages
+4. **Worker.Console** - console worker
+5. **Worker.Service** - example of Windows Service
