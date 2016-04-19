@@ -17,8 +17,8 @@ queue.CreateIfNotExists();
 ```
 
 
-Send message
-------------
+Sending messages
+----------------
 
 ```csharp
 queue.AddMessage(new CloudQueueMessage("Hello World!"));
