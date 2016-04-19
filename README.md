@@ -5,6 +5,7 @@ Azure Queue Samples
 
 [Local Storage Emulator](https://azure.microsoft.com/en-us/documentation/articles/storage-use-emulator/) - may be installed via [Web Platform Installer](https://www.microsoft.com/web/downloads/platform.aspx) by installing **Microsoft Azure SDK for .NET** (latest available at this moment)
 
+
 Connecting to Queue
 -------------------
 
@@ -15,12 +16,14 @@ var queue = queueClient.GetQueueReference("sandbox"); // queue name
 queue.CreateIfNotExists();
 ```
 
-Sending messages
-----------------
+
+Send message
+------------
 
 ```csharp
 queue.AddMessage(new CloudQueueMessage("Hello World!"));
 ```
+
 
 Processing messages
 -------------------
@@ -40,6 +43,7 @@ while (true)
 	}
 }
 ```
+
 
 Sample projects
 ---------------
